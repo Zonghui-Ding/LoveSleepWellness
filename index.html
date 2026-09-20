@@ -165,6 +165,10 @@
   .quicklinks{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
   @media (max-width:860px){ .quicklinks{ grid-template-columns:repeat(2,1fr); } }
   @media (max-width:480px){ .quicklinks{ grid-template-columns:1fr; } }
+  .quicklinks-5{ grid-template-columns:repeat(5,1fr); }
+  @media (max-width:980px){ .quicklinks-5{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:640px){ .quicklinks-5{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:420px){ .quicklinks-5{ grid-template-columns:1fr; } }
   .qcard{ border:1px solid var(--line); border-radius:8px; padding:20px; text-decoration:none; color:var(--ink); transition:border-color .15s ease, transform .15s ease; }
   .qcard:hover{ border-color:var(--teal); transform:translateY(-2px); }
   .qcard .qicon{ font-size:1.4rem; margin-bottom:10px; display:block; }
@@ -233,6 +237,8 @@
   /* ---------- INSURANCE / PAY ---------- */
   .pay-grid{ display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:30px; }
   @media (max-width:700px){ .pay-grid{ grid-template-columns:1fr; } }
+  .pay-grid-3{ grid-template-columns:repeat(3,1fr); }
+  @media (max-width:860px){ .pay-grid-3{ grid-template-columns:1fr; } }
   .pay-card{ border:1px solid var(--line); border-radius:8px; padding:28px; }
   .pay-card h3{ margin-bottom:10px; }
   .pay-card p{ font-size:0.94rem; opacity:0.78; margin:0; }
@@ -289,6 +295,8 @@
       <a href="#/" data-nav="home">Home</a>
       <a href="#/sleep-disorders" data-nav="sleep-disorders">Sleep Disorders</a>
       <a href="#/services" data-nav="services">Services</a>
+      <a href="#/aesthetics" data-nav="aesthetics">Aesthetics</a>
+      <a href="#/membership" data-nav="membership">Membership</a>
       <a href="#/patients" data-nav="patients">Patients</a>
       <a href="#/about" data-nav="about">About</a>
       <a href="#/contact" data-nav="contact">Contact</a>
@@ -305,6 +313,8 @@
     <a href="#/" data-nav="home">Home</a>
     <a href="#/sleep-disorders" data-nav="sleep-disorders">Sleep Disorders</a>
     <a href="#/services" data-nav="services">Services</a>
+    <a href="#/aesthetics" data-nav="aesthetics">Aesthetics</a>
+    <a href="#/membership" data-nav="membership">Membership</a>
     <a href="#/patients" data-nav="patients">Patients</a>
     <a href="#/about" data-nav="about">About</a>
     <a href="#/contact" data-nav="contact">Contact</a>
@@ -321,7 +331,7 @@
       <div>
         <div class="eyebrow">Sleep Medicine &amp; Primary Wellness Care — Phoenix, AZ</div>
         <h1>Restful nights,<br><em>steadier days.</em></h1>
-        <p class="lede">LoveSleep and Wellness LLC helps Phoenix-area patients sleep better and live healthier — from CPAP management and insomnia care to everyday wellness and weight management, with Dr. Zonghui Ding, MD.</p>
+        <p class="lede">LoveSleep and Wellness LLC helps Phoenix-area patients sleep better and live healthier — from CPAP management and insomnia care to everyday wellness and weight management, with Dr. Bruce Ding, MD.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#/book">Request an appointment</a>
           <a class="btn btn-ghost" href="tel:6266160000">Call 626-616-0000</a>
@@ -366,17 +376,17 @@
       </div>
       <div class="service-row"><div class="service-num">01</div><div><h3>Sleep Studies &amp; CPAP Management</h3><p>Evaluation and ongoing management for sleep apnea, including home sleep study referrals and CPAP setup, mask troubleshooting, and compliance follow-up.</p></div></div>
       <div class="service-row"><div class="service-num">02</div><div><h3>Insomnia Treatment</h3><p>Personalized evaluation of sleep difficulty, including behavioral strategies, sleep hygiene coaching, and medical management when appropriate.</p></div></div>
-      <div class="service-row"><div class="service-num">03</div><div><h3>Wellness Care</h3><p>Everyday primary care — annual wellness visits, preventive screenings, and chronic condition management for adults.</p></div></div>
+      <div class="service-row"><div class="service-num">03</div><div><h3>Aesthetics</h3><p>Botox injections to soften expression lines, delivered in a quick, comfortable office visit with results that develop naturally over the following days.</p></div></div>
       <div class="service-row"><div class="service-num">04</div><div><h3>Weight Loss Management</h3><p>Medically supervised weight management, including nutrition guidance and treatment options tailored to your health history.</p></div></div>
-      <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;"><a class="btn btn-outline" href="#/services">See all services</a><a class="btn btn-outline" href="#/sleep-disorders">Sleep disorders we treat</a></div>
+      <div style="margin-top:28px; display:flex; gap:14px; flex-wrap:wrap;"><a class="btn btn-outline" href="#/services">See all services</a><a class="btn btn-outline" href="#/sleep-disorders">Sleep disorders we treat</a><a class="btn btn-outline" href="#/aesthetics">Aesthetics</a></div>
     </div>
   </section>
 
   <section style="background:var(--mist);">
     <div class="wrap provider-wrap">
-      <div class="provider-portrait" role="img" aria-label="Placeholder portrait for Dr. Zonghui Ding"></div>
+      <div class="provider-portrait" role="img" aria-label="Placeholder portrait for Dr. Bruce Ding"></div>
       <div>
-        <h2>Meet Dr. Zonghui Ding, MD</h2>
+        <h2>Meet Dr. Bruce Ding, MD</h2>
         <p class="lede">Dr. Ding founded LoveSleep and Wellness LLC to give Phoenix patients a calmer, more attentive path back to good sleep and steady health — treating sleep problems, chronic conditions, and everyday wellness as connected parts of the same picture.</p>
         <a class="btn btn-outline" style="margin-top:18px;" href="#/about">Read the full bio</a>
       </div>
@@ -455,8 +465,9 @@
         <p>Trouble falling asleep, staying asleep, or waking too early can come from habits, stress, or an underlying condition. We start with a full evaluation of your sleep patterns and history, then build a plan that may include sleep hygiene coaching, behavioral strategies, or medication when it's the right fit.</p>
       </div></div>
       <div class="service-row"><div class="service-num">03</div><div>
-        <h3>Wellness Care</h3>
-        <p>Your everyday primary care needs — annual wellness visits, preventive screenings, vaccinations, and management of ongoing conditions like high blood pressure, diabetes, or thyroid issues — handled by a provider who also understands your sleep health.</p>
+        <h3>Aesthetics</h3>
+        <p>Botox injections to soften expression lines like the ones between the brows, across the forehead, and around the eyes. Treatments take about 15–30 minutes with no downtime, and results typically develop over 3–14 days.</p>
+        <a class="btn btn-outline btn-sm" href="#/aesthetics">Learn more about Aesthetics</a>
       </div></div>
       <div class="service-row"><div class="service-num">04</div><div>
         <h3>Weight Loss Management</h3>
@@ -467,6 +478,57 @@
   <section class="ctaband">
     <div class="wrap"><h2>Ready to get started?</h2>
       <div class="hero-actions"><a class="btn btn-primary" href="#/book">Book an appointment</a><a class="btn btn-outline" href="#/patients/faq">Read FAQs</a></div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= AESTHETICS ================= -->
+<div class="page" id="page-aesthetics" data-title="Aesthetics — LoveSleep and Wellness LLC">
+  <section class="pagehead">
+    <div class="wrap">
+      <div class="crumb"><a href="#/">Home</a> › Aesthetics</div>
+      <h1>Aesthetics</h1>
+      <p class="lede">Alongside sleep and wellness care, we offer select aesthetic treatments to help you look as rested as you feel.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#/book">Book an appointment</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div style="max-width:680px; margin-bottom:40px;">
+        <h2>What is Botox?</h2>
+        <p class="lede">Botox is the brand name for botulinum toxin type A, a purified protein that's injected in small, precise amounts into targeted muscles. It works by temporarily blocking the nerve signals that tell those muscles to contract. With the muscle relaxed, the skin above it smooths out, which is why Botox is best known for softening expression lines — like the ones between the eyebrows, across the forehead, and around the eyes — that form from repeated facial movement over time.</p>
+        <p style="margin-top:16px; opacity:0.82;">Botox has been used safely in medicine for decades, both for cosmetic purposes and for a number of medical conditions. Results are temporary, generally appearing within a few days and lasting several months, which is why most patients return periodically to maintain their results.</p>
+      </div>
+
+      <div class="service-row"><div class="service-num">01</div><div>
+        <h3>Botox Injections</h3>
+        <p>A quick, in-office treatment tailored to your facial anatomy and goals. Dr. Ding reviews your health history and the areas you'd like to address, then administers injections using a fine needle — most appointments take about 15–30 minutes, with no downtime needed afterward. Full results typically develop over 3–14 days and last approximately 3–4 months, depending on the individual.</p>
+      </div></div>
+
+      <div class="help-grid" style="margin-top:12px;">
+        <div class="help-card">
+          <span class="qicon">🕒</span><h3>What to expect</h3>
+          <p>A brief consultation, targeted injections in the treatment area, and simple aftercare guidance (like avoiding lying down or rubbing the area for a few hours). Most patients resume normal activities immediately.</p>
+        </div>
+        <div class="help-card">
+          <span class="qicon">✅</span><h3>Good candidates</h3>
+          <p>Adults bothered by expression lines who are in good general health. Botox isn't recommended during pregnancy or breastfeeding, or for certain neuromuscular conditions — your history will be reviewed at your visit.</p>
+        </div>
+        <div class="help-card">
+          <span class="qicon">💬</span><h3>Have questions?</h3>
+          <p>Every face is different. Book a consultation and Dr. Ding will walk through what's realistic for your goals before any treatment begins.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:28px; font-size:0.85rem; opacity:0.6;">This page is for general education and isn't a substitute for a one-on-one medical consultation. Placeholder note: add real before/after examples, specific treatment-area pricing, and any additional aesthetic services here as your offerings are finalized.</p>
+    </div>
+  </section>
+
+  <section class="ctaband">
+    <div class="wrap"><h2>Curious if Botox is right for you?</h2>
+      <p class="lede center">Book a consultation and get honest, individualized guidance.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#/book">Book an appointment</a><a class="btn btn-outline" href="#/contact">Ask a question</a></div>
     </div>
   </section>
 </div>
@@ -486,9 +548,10 @@
   <section>
     <div class="wrap">
       <div style="font-size:0.85rem; font-weight:600; opacity:0.6; margin-bottom:16px;">Quick links</div>
-      <div class="quicklinks">
+      <div class="quicklinks quicklinks-5">
         <a class="qcard" href="#/book"><span class="qicon">📅</span><span class="qtitle">Book an appointment</span><span class="qsub">Online in under 2 minutes</span></a>
         <a class="qcard" href="#/patients/insurance"><span class="qicon">🛡️</span><span class="qtitle">Verify insurance</span><span class="qsub">See how billing works</span></a>
+        <a class="qcard" href="#/membership"><span class="qicon">⭐</span><span class="qtitle">Membership</span><span class="qsub">Unlimited visits, flat rate</span></a>
         <a class="qcard" href="#/patients/expect"><span class="qicon">🧭</span><span class="qtitle">What to expect</span><span class="qsub">Your first visit, step by step</span></a>
         <a class="qcard" href="#/patients/faq"><span class="qicon">💬</span><span class="qtitle">FAQs</span><span class="qsub">Answers to common questions</span></a>
       </div>
@@ -503,6 +566,7 @@
       <div class="help-grid">
         <div class="help-card"><span class="qicon">📅</span><h3>Book an appointment</h3><p>Schedule online in a couple of minutes. Choose an in-office visit in Phoenix or a telehealth visit from home.</p><a class="arrow-link" href="#/book">Book now →</a></div>
         <div class="help-card"><span class="qicon">🛡️</span><h3>Insurance &amp; billing</h3><p>See how coverage typically works, and understand self-pay pricing before you visit.</p><a class="arrow-link" href="#/patients/insurance">Check coverage →</a></div>
+        <div class="help-card"><span class="qicon">⭐</span><h3>Founding Membership</h3><p>No insurance? Get unlimited visits for a flat monthly or yearly rate instead.</p><a class="arrow-link" href="#/membership">See membership →</a></div>
         <div class="help-card"><span class="qicon">🧭</span><h3>What to expect</h3><p>From your first consultation to any follow-up care — here's exactly how the process works.</p><a class="arrow-link" href="#/patients/expect">See the journey →</a></div>
         <div class="help-card"><span class="qicon">💬</span><h3>Frequently asked questions</h3><p>Answers to the questions we hear most — about sleep care, wellness visits, and appointments.</p><a class="arrow-link" href="#/patients/faq">Read FAQs →</a></div>
         <div class="help-card"><span class="qicon">🌙</span><h3>Not sure where to start?</h3><p>Call our office and we'll help point you to the right visit type for what you're dealing with.</p><a class="arrow-link" href="tel:6266160000">Call 626-616-0000 →</a></div>
@@ -540,9 +604,10 @@
   </section>
   <section>
     <div class="wrap">
-      <div class="pay-grid">
+      <div class="pay-grid pay-grid-3">
         <div class="pay-card"><h3>Insurance</h3><p>We bill most major insurance plans. Please have your insurance card ready at check-in, or contact our office beforehand to verify your specific benefits and coverage.</p></div>
         <div class="pay-card"><h3>Self-pay</h3><p>Prefer not to use insurance, or don't have coverage? Straightforward self-pay pricing is available for all visit types — call our office for current rates.</p></div>
+        <div class="pay-card"><h3>Founding Membership</h3><p>No insurance, or don't want to use it? Join our membership for unlimited visits at a flat monthly or yearly rate.</p><a class="arrow-link" style="display:inline-block; margin-top:10px;" href="#/membership">See membership details →</a></div>
       </div>
       <p style="margin-top:32px; font-size:0.9rem; opacity:0.65;">Placeholder note: list your specific accepted insurance plans here once confirmed (for example, major PPO/HMO carriers, Medicare, etc.) so patients can check coverage before booking.</p>
       <ul class="plan-list">
@@ -551,6 +616,59 @@
     </div>
   </section>
   <section class="ctaband"><div class="wrap"><h2>Ready to book?</h2><div class="hero-actions"><a class="btn btn-primary" href="#/book">Book an appointment</a></div></div></section>
+</div>
+
+<!-- ================= PATIENTS: MEMBERSHIP ================= -->
+<div class="page" id="page-membership" data-title="Membership — LoveSleep and Wellness LLC">
+  <section class="pagehead">
+    <div class="wrap"><div class="crumb"><a href="#/">Home</a> › Membership</div>
+      <h1>LoveSleep and Wellness Founding Membership</h1>
+      <p class="lede">If you don't have insurance, or would rather not use it, our founding membership gives you unlimited access to care for one flat rate.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="#/contact">Ask about joining</a></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="pay-grid" style="grid-template-columns:1fr 1fr; align-items:stretch;">
+        <div class="pay-card" style="border-color:var(--teal);">
+          <div style="font-size:0.82rem; font-weight:600; color:var(--teal-dark); margin-bottom:8px;">MONTHLY</div>
+          <h3 style="font-size:2rem; margin-bottom:4px;">$100<span style="font-size:1rem; font-weight:500; opacity:0.6;"> / month</span></h3>
+          <p>Billed monthly. Cancel any time.</p>
+        </div>
+        <div class="pay-card" style="border-color:var(--teal);">
+          <div style="font-size:0.82rem; font-weight:600; color:var(--teal-dark); margin-bottom:8px;">ANNUAL — BEST VALUE</div>
+          <h3 style="font-size:2rem; margin-bottom:4px;">$1,100<span style="font-size:1rem; font-weight:500; opacity:0.6;"> / year</span></h3>
+          <p>Billed once a year — equivalent to about $91.67/month, a savings versus paying monthly.</p>
+        </div>
+      </div>
+
+      <div style="max-width:680px; margin-top:40px;">
+        <h2>What's included</h2>
+        <p class="lede">Unlimited medically appropriate office visits and virtual visits are included with membership — no per-visit charge, no insurance needed.</p>
+      </div>
+
+      <div class="help-grid">
+        <div class="help-card"><span class="qicon">⏱️</span><h3>Same- or next-day appointments</h3><p>Priority scheduling when availability allows, so you're not waiting weeks to be seen.</p></div>
+        <div class="help-card"><span class="qicon">🤝</span><h3>Personalized care</h3><p>More time and continuity with your provider, focused on your specific health goals.</p></div>
+        <div class="help-card"><span class="qicon">⚖️</span><h3>Weight loss management</h3><p>Ongoing, medically supervised support included as part of your membership.</p></div>
+        <div class="help-card"><span class="qicon">🌙</span><h3>Sleep management</h3><p>Insomnia care and CPAP/sleep apnea management included at no extra per-visit cost.</p></div>
+        <div class="help-card"><span class="qicon">👩</span><h3>Women's health</h3><p>Routine women's health visits and concerns covered under your membership.</p></div>
+        <div class="help-card"><span class="qicon">👨</span><h3>Men's health</h3><p>Routine men's health visits and concerns covered under your membership.</p></div>
+        <div class="help-card"><span class="qicon">💉</span><h3>Aesthetics medicine</h3><p>Includes access to aesthetics services such as Botox — ask us how membership applies to these visits.</p></div>
+        <div class="help-card"><span class="qicon">💻</span><h3>Virtual visits</h3><p>Unlimited medically appropriate telehealth visits, in addition to in-office care.</p></div>
+      </div>
+
+      <p style="margin-top:28px; font-size:0.85rem; opacity:0.6;">Membership is a self-pay arrangement and is separate from insurance — it isn't insurance and can't be billed to a plan. "Medically appropriate" visits are determined by your provider at the time of care. Placeholder note: finalize exact enrollment terms, cancellation policy, and any exclusions before this goes live.</p>
+    </div>
+  </section>
+
+  <section class="ctaband">
+    <div class="wrap"><h2>Ready to become a founding member?</h2>
+      <p class="lede center">Reach out and we'll help you get set up.</p>
+      <div class="hero-actions"><a class="btn btn-primary" href="tel:6266160000">Call 626-616-0000</a><a class="btn btn-outline" href="#/contact">Send a message</a></div>
+    </div>
+  </section>
 </div>
 
 <!-- ================= PATIENTS: WHAT TO EXPECT ================= -->
@@ -627,7 +745,7 @@
               <select id="fservice" name="fservice" required>
                 <option value="" disabled selected>Select a service</option>
                 <option>Sleep Study / CPAP Management</option><option>Insomnia Treatment</option>
-                <option>Wellness Care</option><option>Weight Loss Management</option>
+                <option>Aesthetics</option><option>Weight Loss Management</option>
                 <option>New Patient Visit</option><option>Other</option>
               </select>
             </div>
@@ -658,11 +776,11 @@
   <section>
     <div class="wrap provider-wrap">
       <div>
-        <div class="provider-portrait" role="img" aria-label="Placeholder portrait for Dr. Zonghui Ding"></div>
+        <div class="provider-portrait" role="img" aria-label="Placeholder portrait for Dr. Bruce Ding"></div>
         <div class="provider-cred">Sleep Medicine &amp; Primary Care</div>
       </div>
       <div>
-        <h2>Zonghui Ding, MD</h2>
+        <h2>Bruce Ding, MD</h2>
         <p class="lede">Dr. Ding founded LoveSleep and Wellness LLC to give Phoenix patients a calmer, more attentive path back to good sleep and steady health. She takes an individualized approach to care — treating sleep problems, chronic conditions, and everyday wellness as connected parts of the same picture, rather than separate visits.</p>
         <p style="margin-top:16px; opacity:0.8; font-size:0.96rem;">Add your practice bio, education, board certifications, and clinical interests here — this section is a placeholder ready for your real credentials and photo.</p>
       </div>
@@ -759,6 +877,8 @@
         <li><a href="#/patients/faq">FAQs</a></li>
       </ul></div>
       <div><h4>Company</h4><ul>
+        <li><a href="#/aesthetics">Aesthetics</a></li>
+        <li><a href="#/membership">Membership</a></li>
         <li><a href="#/about">About</a></li>
         <li><a href="#/contact">Contact</a></li>
         <li><a href="#/coming-soon">Coming Soon</a></li>
@@ -792,6 +912,8 @@
     '/': 'page-home',
     '/sleep-disorders': 'page-sleep-disorders',
     '/services': 'page-services',
+    '/aesthetics': 'page-aesthetics',
+    '/membership': 'page-membership',
     '/patients': 'page-patients',
     '/patients/insurance': 'page-patients-insurance',
     '/patients/expect': 'page-patients-expect',
@@ -803,6 +925,7 @@
   };
   var navHighlight = {
     'page-home':'home', 'page-sleep-disorders':'sleep-disorders', 'page-services':'services',
+    'page-aesthetics':'aesthetics', 'page-membership':'membership',
     'page-patients':'patients', 'page-patients-insurance':'patients',
     'page-patients-expect':'patients', 'page-patients-faq':'patients', 'page-book':'patients',
     'page-about':'about', 'page-contact':'contact', 'page-coming-soon':'about'
